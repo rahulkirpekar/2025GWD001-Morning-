@@ -1,0 +1,90 @@
+Runtime Polymorphism:-
+---------------------
+
+	A(Parent/Base/Super)
+	|
+	B(Child/Derived/Sub)
+
+
+	A obj = new A();
+
+
+// Polymorphic Object:-
+-----------------------------
+
+	A obj = new B();
+
+
+	B obj = new A();//C.E	
+
+
+				Person(void getBehave()---Human)
+				  |
+	-------------------------------------------------------------------------
+	|			 |			|			|
+      School			Org		   PublicPlace		       Home
+ void getBehave()	void getBehave()	void getBehave()	void getBehave()		
+	|			 |			|			|
+      Student		      Employee		     Citizen		       Child		
+
+
+	Person person = new School();
+	person.getBehave();
+
+
+
+Upcasting and Downcasting:-
+-----------------------------
+
+
+				Person(getBehave()---Human Behaviour)
+				  |
+	---------------------------------------------------------------------------------
+	|			  |				|			|
+     School		         Org			   PublicPlace		       Home		   getExamResult(); 	     getSalary();		  getPublicEvent();	   getMoviewOnTime();
+	 	
+    getBehave()		     getBehave()		   getBehave()                getBehave()	 
+  	|			  |				|			|
+     Student		       Employee                     Citizen                    School	
+	
+	Person person = null;
+
+
+	// Polymorphisc Object / Upcasting
+	person = new School();
+	person.getBehave();
+
+	//person.getExamResult();//C.E
+
+
+	if(person instanceof School)
+	{
+		// Dowancasting
+		School student = (School)person;
+		student.getExamResult();// Compiletime PASS
+	}
+	else if(person instanceof Org)
+	{
+		// Dowancasting
+		Org emp = (Org)person;
+		emp.getSalary();
+	}
+	else if(person instanceof PublicPlace)
+	{
+		// Dowancasting
+		PublicPlace citizen = (PublicPlace)person;
+		citizen.getPublicEvent();
+	}
+	else if(person instanceof Home)
+	{
+		// Dowancasting
+		Home child = (Home)person;
+		child.getMoviewOnTime();
+	}
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+OOP's features:-
+-----------------
+	1. class(User Defined DataType)
+		|
+	2. object(class type variable = object)
+		|
+	3. Encapsulation
+		|
+	4. Inheritance
+		|
+	5. Polymorphism
+		|
+	6. Abstraction
