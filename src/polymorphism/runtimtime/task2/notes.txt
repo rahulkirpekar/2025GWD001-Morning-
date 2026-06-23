@@ -1,0 +1,24 @@
+					Person(getBehave()---Human)
+					  |
+	---------------------------------------------------------------------------------
+	|			|				|			|
+     School		       Org			   PublicPlace		       Home
+   getResult(); 	  getSalary();			  getPublicEvent();	  getMovieOnTime();
+	|			|				|			|
+    getBehave()		    getBehave()                    getBehave()              getBehave()
+	|			|				|			|
+     Student		     Employee			     Citizen		      Child	
+
+	
+	Person person = null;
+
+	// Upcasting / Polymorphic Object
+	person = new Org();
+	person.getBehave();
+
+	person.getResult();// C.E
+
+	// Downcasting
+	School student = (School)person;// ClassCastException
+	student.getResult(); 
+
