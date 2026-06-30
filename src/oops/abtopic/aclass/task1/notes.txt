@@ -1,0 +1,38 @@
+Abstraction:-
+--------------
+
+		Trustees(interface)--Rules as Abstract Methods
+		   |
+		Principal(Abstract class)--Rules as Abstract Methods	
+		   |
+   --------------------------------------
+   |		   |			|
+Management	Faculties	     Students
+
+
+
+	1. 0% to 100%			2. 100%
+	-----------------		-----------------
+	==> Abstract Class		==> interface
+
+
+Abstract Class:-
+----------------
+	1.Dm's
+	2.constructor
+	3.Methods
+		1. Abstract Methods(Rules/GuideLine)
+
+		abstract void test1();		
+
+		2. Non-Abstract Methods
+
+		void test2()
+		{
+
+		}	
+
+
+
+
+
