@@ -1,0 +1,46 @@
+interface(100% Abstraction):-
+-----------------------------
+	1. Data Members/Constant Variables(public static final)
+	2. Methods
+		1. Abstract Methods(public abstract)
+
+		public abstract void test1();// public abstract
+				
+		2. Non-Abstract Methods(static,default,private)
+	
+	static void test2()
+	{
+
+	}
+	default void test3()
+	{
+		test4();
+	}	
+	private void test4()
+	{
+
+	}	
+	
+
+
+	class		interface	 interface		class
+	 |--extends	   |--extends	    |--implements	  |---X(Not Possible in Java)	
+	class		interface	  class			interface
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
