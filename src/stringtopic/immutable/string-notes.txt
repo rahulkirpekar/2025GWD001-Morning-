@@ -1,0 +1,105 @@
+String(class) :- Multiple Characters
+---------------
+	
+	==> String is Special class
+
+	1.Final class
+	2.Immutable Behaviour
+	3.By String Literalway object
+--------------------------------------------------------------------------------------------------------------------
+
+			Ways to Operate Operation on String type data
+			-----------------------------------------------
+
+		1. ImmutableWay					2. MutableWay
+		-----------------				-----------------
+		===> String(class)				===> StringBuilder(class)	
+								===> StringBuffer(class)
+------------------------------------------------------------------------------------------------------------------------
+
+1. ImmutableWay(String class):-
+---------------------------------
+
+Ways to create object of String class:-
+--------------------------------------
+
+
+	1.By String Literal Way(String class)[ RAM----->HEAP----->(SCP--String Constant Pool)]:-
+	----------------------------------------------------------------------------------------------
+		String name1 = "royal";
+		String name2 = "royal";
+		String name3 = "technosoft";
+		String name4 = name3;
+		String name5 = "royaltechnosoft"
+		String name6 = name1.concat(name3);// royaltechnosoft
+
+		String name7 = name5;
+
+Object Equality:-
+-------------------
+		1. referenceBased(==)			2. valueBased(.equals())
+		---------------------			-------------------------
+		SOP(name1==name2);// true                SOP(name1.equals(name2));// true
+		SOP(name1==name3);// false               SOP(name1.equals(name3));// false
+		SOP(name1==name4);// false               SOP(name1.equals(name4));// false
+		SOP(name1==name5);// false               SOP(name1.equals(name5));// false
+		SOP(name1==name6);// false               SOP(name1.equals(name6));// false
+		SOP(name1==name7);// false               SOP(name1.equals(name7));// false
+		SOP(name2==name3);// false               SOP(name2.equals(name3));// false
+		SOP(name2==name4);// false               SOP(name2.equals(name4));// false
+		SOP(name2==name5);// false               SOP(name2.equals(name5));// false
+		SOP(name2==name6);// false               SOP(name2.equals(name6));// false
+		SOP(name2==name7);// false               SOP(name2.equals(name7));// false
+		SOP(name3==name4);// true                SOP(name3.equals(name4));// true
+		SOP(name3==name5);// false               SOP(name3.equals(name5));// false
+		SOP(name3==name6);// false               SOP(name3.equals(name6));// false
+		SOP(name3==name7);// false               SOP(name3.equals(name7));// false
+		SOP(name4==name5);// false               SOP(name4.equals(name5));// false
+		SOP(name4==name6);// false               SOP(name4.equals(name6));// false
+		SOP(name4==name7);// false               SOP(name4.equals(name7));// false
+		SOP(name5==name6);// false               SOP(name5.equals(name6));// true
+		SOP(name5==name7);// true                SOP(name5.equals(name7));// true
+		SOP(name6==name7);// false               SOP(name6.equals(name7));// true
+
+
+	2. By 'new' Keyword Way(String class)[ RAM----->HEAP ] :-
+	----------------------------------------------------------------------------------------------
+	
+		String name8 = new String("royal");
+		String name9 = new String("royal");
+		String name10 = name8;
+		String name11 = new String("technosoft");
+
+Object Equality:-
+-------------------
+		1. referenceBased(==)					2. valueBased(.equals())
+		---------------------					-------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+	
